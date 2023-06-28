@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Break News</title>
+    <link rel="stylesheet" href="News.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="main-navbar flex container">
+            <a href="#" class="company-logo">
+                <img src="image-removebg-preview.png" alt="LOGO">
+            </a>
+            <div class="nav-link" id="nav-links">
+                <ul class="flex">
+                    <li class=" nav-item" id="hover-link ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class=" nav-item" id="hover-link finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class=" nav-item" id="hover-link politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex" id="search-bar">
+                <input type="text" id="news-input" placeholder="for ex., science" >
+                <button  id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="http://placehold.it/250x120?text=hello+world" height="200px" width="400px" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ratione asperiores veniam a et ad dolore dolorem molestias officiis similique.</p>
+            </div>
+        </div>
+    </template>
+
+    
+    <!-- <footer>
+        <center>
+        <h4>a AVISHKAR KAKADE production</h4>
+        <h4>CoffeBreakNewsⓒ2023</h4>
+        </center>
+
+    </footer> -->
+
+    <script src="News.js"></script>
+
+
+
+</body>
+</html>
